@@ -1,0 +1,24 @@
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Droid Sans', 'Droid Serif']
+    }
+  });
+</script>
+
+var cardObj = {
+    "id":"EX1_116",
+    "set":"EXPERT1",
+    "type":"MINION",
+    "attack":6,
+    "health":2,
+    "rarity":"LEGENDARY",
+    "cost":5,
+    "name":"Leeroy Jenkins",
+    "text":"<b>Charge</b>. <b>Battlecry:</b> Summon two 1/1 Whelps for your opponent.",
+    "texture":"wow_penny_003_D"
+};
+var resultImg = document.getElementById('myResultImage');
+
+sunwell.createCard(cardObj, 764, resultImg);
